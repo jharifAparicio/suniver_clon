@@ -1,698 +1,720 @@
 <!DOCTYPE html>
 <html lang="es-BO">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh"
-        content="3600;" />
-    <meta name="csrf-param"
-        content="_csrf">
-    <meta name="csrf-token"
-        content="FmUoTBrHRszYQOo09zr-L5UbZp-l6qB6i_rJbZBYQKheV2MGXrADupZ2vkHOaacX4EkB7Oyv9ErKg6Ye32EW-A==">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content="3600;" />
+    <meta name="csrf-param" content="_csrf" />
+    <meta
+      name="csrf-token"
+      content="FmUoTBrHRszYQOo09zr-L5UbZp-l6qB6i_rJbZBYQKheV2MGXrADupZ2vkHOaacX4EkB7Oyv9ErKg6Ye32EW-A=="
+    />
     <title>Libreta</title>
-    <link href="assets/9de34b68/css/IndexLibretaStyle.css"
-        rel="stylesheet">
-    <link href="assets/b6484cb6/themes/smoothness/jquery-ui.css"
-        rel="stylesheet">
-    <link href="assets/caad04ca/css/bootstrap.css"
-        rel="stylesheet">
-    <link href="assets/fd59674c/css/font-awesome.min.css"
-        rel="stylesheet">
-    <link href="assets/56a1f85b/css/skins/skin-yellow-light.min.css"
-        rel="stylesheet">
-    <link href="css/AdminLTE.min.css"
-        rel="stylesheet">
-    <link href="css/fonts.min.css"
-        rel="stylesheet">
-    <link href="css/site.min.css"
-        rel="stylesheet">
-    <link href="plugins/sweetalert2/sweetalert2.css"
-        rel="stylesheet">
-</head>
+    <link href="assets/9de34b68/css/IndexLibretaStyle.css" rel="stylesheet" />
+    <link
+      href="assets/b6484cb6/themes/smoothness/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <link href="assets/caad04ca/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/fd59674c/css/font-awesome.min.css" rel="stylesheet" />
+    <link
+      href="assets/56a1f85b/css/skins/skin-yellow-light.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/AdminLTE.min.css" rel="stylesheet" />
+    <link href="css/fonts.min.css" rel="stylesheet" />
+    <link href="css/site.min.css" rel="stylesheet" />
+    <link href="plugins/sweetalert2/sweetalert2.css" rel="stylesheet" />
+  </head>
 
-<body class="hold-transition skin-yellow-light sidebar-mini">
+  <body class="hold-transition skin-yellow-light sidebar-mini">
     <div class="wrapper">
+      <header class="main-header">
+        <!-- Google tag (gtag.js) -->
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-NTJ1B9MZD5"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag("js", new Date());
 
+          gtag("config", "G-NTJ1B9MZD5");
+        </script>
 
-        <header class="main-header">
-            <!-- Google tag (gtag.js) -->
-            <script async
-                src="https://www.googletagmanager.com/gtag/js?id=G-NTJ1B9MZD5"></script>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag() { dataLayer.push(arguments); }
-                gtag('js', new Date());
+        <!--    <script>-->
+        <!--        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){-->
+        <!--            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),-->
+        <!--            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)-->
+        <!--        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');-->
+        <!---->
+        <!--        ga('create', 'UA-84816449-1', 'auto');-->
+        <!--        ga('send', 'pageview');-->
+        <!--    </script>-->
 
-                gtag('config', 'G-NTJ1B9MZD5');
-            </script>
-
-            <!--    <script>-->
-            <!--        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){-->
-            <!--            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),-->
-            <!--            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)-->
-            <!--        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');-->
-            <!---->
-            <!--        ga('create', 'UA-84816449-1', 'auto');-->
-            <!--        ga('send', 'pageview');-->
-            <!--    </script>-->
-
-            <a class="logo"
-                href="/"><span class="logo-mini">SUN</span><span class="logo-lg">Suniver</span></a>
-            <nav class="navbar navbar-static-top"
-                role="navigation">
-
-                <a href="#"
-                    class="sidebar-toggle"
-                    data-toggle="offcanvas"
-                    role="button">
-                    <span class="sr-only">Ocultar menú izquierdo</span>
+        <a class="logo" href="/"
+          ><span class="logo-mini">SUN</span
+          ><span class="logo-lg">Suniver</span></a
+        >
+        <nav class="navbar navbar-static-top" role="navigation">
+          <a
+            href="#"
+            class="sidebar-toggle"
+            data-toggle="offcanvas"
+            role="button"
+          >
+            <span class="sr-only">Ocultar menú izquierdo</span>
+          </a>
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <img
+                    src="http://si3.usfx.bo/documentos/224275/FOTOG_1_20230420.jpeg"
+                    class="user-image"
+                    alt="Fotografia"
+                  />
+                  <span class="hidden-xs">Melani paola Gutierrez Paco</span>
                 </a>
-                <div class="navbar-custom-menu">
+                <ul class="dropdown-menu">
+                  <!-- User image -->
+                  <li class="user-header">
+                    <img
+                      src="http://si3.usfx.bo/documentos/224275/FOTOG_1_20230420.jpeg"
+                      class="img-circle"
+                      alt="Fotografia"
+                    />
 
-                    <ul class="nav navbar-nav">
-
-                        <li class="dropdown user user-menu">
-                            <a href="#"
-                                class="dropdown-toggle"
-                                data-toggle="dropdown">
-                                <img src="http://si3.usfx.bo/documentos/224275/FOTOG_1_20230420.jpeg"
-                                    class="user-image"
-                                    alt="Fotografia" />
-                                <span class="hidden-xs">Melani paola Gutierrez Paco</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <!-- User image -->
-                                <li class="user-header">
-                                    <img src="http://si3.usfx.bo/documentos/224275/FOTOG_1_20230420.jpeg"
-                                        class="img-circle"
-                                        alt="Fotografia" />
-
-                                    <p>
-                                        Melani paola Gutierrez Paco </p>
-                                </li>
-                                <!-- Menu Footer-->
-                                <li class="user-footer">
-                                    <div class="pull-left">
-                                        <a class="btn btn-default btn-flat"
-                                            href="/Cuenta/profile/profile">Perfil</a>
-                                    </div>
-                                    <div class="pull-right">
-                                        <a class="btn btn-default btn-flat"
-                                            href="/Cuenta/security/logout"
-                                            data-method="post">Cerrar sesión</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="#"
-                                data-toggle="control-sidebar"><i class="fa fa-gears"></i>&nbsp; Carreras</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
-
-
-        <aside class="main-sidebar">
-            <section class="sidebar">
-                <!-- Sidebar user panel -->
-                <div class="user-panel">
-                    <div class="pull-left image">
-                        <img src="http://si3.usfx.bo/documentos/224275/FOTOG_1_20230420.jpeg"
-                            class="img-circle"
-                            alt="Fotografia" />
+                    <p>Melani paola Gutierrez Paco</p>
+                  </li>
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+                    <div class="pull-left">
+                      <a
+                        class="btn btn-default btn-flat"
+                        href="/Cuenta/profile/profile"
+                        >Perfil</a
+                      >
                     </div>
-                    <div class="pull-left info">
-                        <p>Melani paola</p>
-                        <p style="font-weight: 400; font-size: 12px">KINESIOLOGIA Y FISIO.</p>
-                        <!--Modficado en AdminLTE.min.css--><!--Real: .user-panel>.info>p{font-weight:600;margin-bottom:9px}-->
-                        <a class="fa fa-sign-out"
-                            href="/Cuenta/security/logout">Cerrar sesión</a>
+                    <div class="pull-right">
+                      <a
+                        class="btn btn-default btn-flat"
+                        href="/Cuenta/security/logout"
+                        data-method="post"
+                        >Cerrar sesión</a
+                      >
                     </div>
-                </div>
+                  </li>
+                </ul>
+              </li>
 
-                <ul class="sidebar-menu"
-                    data-widget="tree">
-                    <li class="header">NAVEGACION PRINCIPAL</li>
-                    <li class="active treeview">
-                        <a href="#">
-                            <i class="glyphicon glyphicon-folder-open"></i>
-                            <span>Matriculas</span>
-                            <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li class="active"><a href="/Matriculas/matricularme/index"><i class="fa fa-circle-o"></i>
-                                    Matricularme</a></li>
-                            <li><a href="/Matriculas/default/index"><i class="fa fa-circle-o"></i> Mis matriculas</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-table"></i>
-                            <span>Programaciones</span>
-                            <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><a href="/Programaciones/horarios/index"><i class="fa fa-circle-o"></i> Horarios</a>
-                            </li>
-                            <li><a href="/Programaciones/programarme/index"><i class="fa fa-circle-o"></i>
-                                    Programarme</a></li>
-                            <li><a href="/Programaciones/mihorario/index"><i class="fa fa-circle-o"></i> Mi horario</a>
-                            </li>
-                            <li><a href="/Programaciones/default/index"><i class="fa fa-circle-o"></i> Mis
-                                    Programaciones</a></li>
-                        </ul>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-edit"></i>
-                            <span>Calificaciones</span>
-                            <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><a href="/Kardex/default/index"><i class="fa fa-circle-o"></i> Mi Kardex</a></li>
-                            <li><a href="/Kardex/libreta/index"><i class="fa fa-circle-o"></i> Mi Libreta</a></li>
-                            <li><a href="/Kardex/cuaderno/index"><i class="fa fa-circle-o"></i> Mi Cuaderno de
-                                    Trabajo</a></li>
-                        </ul>
-                    </li>
-                    <!--                <li><a href="--><!--"><i class="fa fa-book"></i> <span>Campus Virtual</span></a></li>-->
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-files-o"></i>
-                            <span>Becas</span>
-                            <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><a href="/Becas/default/index"><i class="fa fa-circle-o"></i> Postularme</a></li>
-                            <li><a href="/Becas/default/index-auxiliatura"><i class="fa fa-circle-o"></i> Postularme
-                                    Auxiliatura</a></li>
-                            <li><a href="/Becas/postulacion/index"><i class="fa fa-circle-o"></i> Historial
-                                    Postulaciones</a></li>
-                            <li><a href="/Becas/becarios/index"><i class="fa fa-circle-o"></i> Becas Otorgadas</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/Registros/hermanos"><i class="fa fa-odnoklassniki"></i> <span>Rebaja de
-                                Hermanos</span></a></li>
-                    <li><a href="/Tramites/default/index"><i class="fa fa-book"></i> <span>Tramites</span></a></li>
-                    <li><a href="/Formularios/default/index"><i class="fa fa-book"></i> <span>Formularios</span></a>
-                    </li>
-                    <li><a href="/Formularios/default/scopus"><i class="fa fa-book"></i> <span>Scopus</span></a></li>
-                    <li><a href="/Encuesta/encuesta/index"><i class="fa fa-book"></i> <span>Encuesta</span></a></li>
+              <li>
+                <a href="#" data-toggle="control-sidebar"
+                  ><i class="fa fa-gears"></i>&nbsp; Carreras</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
+      <aside class="main-sidebar">
+        <section class="sidebar">
+          <!-- Sidebar user panel -->
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img
+                src="http://si3.usfx.bo/documentos/224275/FOTOG_1_20230420.jpeg"
+                class="img-circle"
+                alt="Fotografia"
+              />
+            </div>
+            <div class="pull-left info">
+              <p>Melani paola</p>
+              <p style="font-weight: 400; font-size: 12px">
+                KINESIOLOGIA Y FISIO.
+              </p>
+              <!--Modficado en AdminLTE.min.css--><!--Real: .user-panel>.info>p{font-weight:600;margin-bottom:9px}-->
+              <a class="fa fa-sign-out" href="/Cuenta/security/logout"
+                >Cerrar sesión</a
+              >
+            </div>
+          </div>
 
+          <ul class="sidebar-menu" data-widget="tree">
+            <li class="header">NAVEGACION PRINCIPAL</li>
+            <li class="active treeview">
+              <a href="#">
+                <i class="glyphicon glyphicon-folder-open"></i>
+                <span>Matriculas</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li class="active">
+                  <a href="/Matriculas/matricularme/index"
+                    ><i class="fa fa-circle-o"></i> Matricularme</a
+                  >
+                </li>
+                <li>
+                  <a href="/Matriculas/default/index"
+                    ><i class="fa fa-circle-o"></i> Mis matriculas</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-table"></i>
+                <span>Programaciones</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li>
+                  <a href="/Programaciones/horarios/index"
+                    ><i class="fa fa-circle-o"></i> Horarios</a
+                  >
+                </li>
+                <li>
+                  <a href="/Programaciones/programarme/index"
+                    ><i class="fa fa-circle-o"></i> Programarme</a
+                  >
+                </li>
+                <li>
+                  <a href="/Programaciones/mihorario/index"
+                    ><i class="fa fa-circle-o"></i> Mi horario</a
+                  >
+                </li>
+                <li>
+                  <a href="/Programaciones/default/index"
+                    ><i class="fa fa-circle-o"></i> Mis Programaciones</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-edit"></i>
+                <span>Calificaciones</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li>
+                  <a href="/Kardex/default/index"
+                    ><i class="fa fa-circle-o"></i> Mi Kardex</a
+                  >
+                </li>
+                <li>
+                  <a href="/Kardex/libreta/index"
+                    ><i class="fa fa-circle-o"></i> Mi Libreta</a
+                  >
+                </li>
+                <li>
+                  <a href="/Kardex/cuaderno/index"
+                    ><i class="fa fa-circle-o"></i> Mi Cuaderno de Trabajo</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!--                <li><a href="--><!--"><i class="fa fa-book"></i> <span>Campus Virtual</span></a></li>-->
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-files-o"></i>
+                <span>Becas</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li>
+                  <a href="/Becas/default/index"
+                    ><i class="fa fa-circle-o"></i> Postularme</a
+                  >
+                </li>
+                <li>
+                  <a href="/Becas/default/index-auxiliatura"
+                    ><i class="fa fa-circle-o"></i> Postularme Auxiliatura</a
+                  >
+                </li>
+                <li>
+                  <a href="/Becas/postulacion/index"
+                    ><i class="fa fa-circle-o"></i> Historial Postulaciones</a
+                  >
+                </li>
+                <li>
+                  <a href="/Becas/becarios/index"
+                    ><i class="fa fa-circle-o"></i> Becas Otorgadas</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/Registros/hermanos"
+                ><i class="fa fa-odnoklassniki"></i>
+                <span>Rebaja de Hermanos</span></a
+              >
+            </li>
+            <li>
+              <a href="/Tramites/default/index"
+                ><i class="fa fa-book"></i> <span>Tramites</span></a
+              >
+            </li>
+            <li>
+              <a href="/Formularios/default/index"
+                ><i class="fa fa-book"></i> <span>Formularios</span></a
+              >
+            </li>
+            <li>
+              <a href="/Formularios/default/scopus"
+                ><i class="fa fa-book"></i> <span>Scopus</span></a
+              >
+            </li>
+            <li>
+              <a href="/Encuesta/encuesta/index"
+                ><i class="fa fa-book"></i> <span>Encuesta</span></a
+              >
+            </li>
 
+            <li class="header">ENLACES EXTERNOS</li>
+            <li>
+              <a href="/site/biblioteca-usfx" target="_blank"
+                ><i class="glyphicon glyphicon-book"></i>
+                <span>Bibliotecas Facultativas</span></a
+              >
+            </li>
 
-
-
-
-
-
-
-                    <li class="header">ENLACES EXTERNOS</li>
-                    <li>
-                        <a href="/site/biblioteca-usfx"
-                            target="_blank"><i class="glyphicon glyphicon-book"></i> <span>Bibliotecas
-                                Facultativas</span></a>
-                    </li>
-
-                    <!--<li>
+            <!--<li>
                                     </li>-->
 
-                    <!--                <li>-->
-                    <!--                    <a id="aBibliotecaVirtual" href="--><!--">-->
-                    <!--                        <i class="glyphicon glyphicon-book"></i> <span>Bibliotecas Virtuales</span>-->
-                    <!--                    </a>-->
-                    <!--                </li>-->
+            <!--                <li>-->
+            <!--                    <a id="aBibliotecaVirtual" href="--><!--">-->
+            <!--                        <i class="glyphicon glyphicon-book"></i> <span>Bibliotecas Virtuales</span>-->
+            <!--                    </a>-->
+            <!--                </li>-->
 
-                    <li>
+            <li>
+              <a
+                href="http://sij.usfx.bo/elibro/principal.usfx"
+                target="_blank"
+                data-method="GET"
+                data-params='{"cu":"null","ca":"CS","idLibro":"null"}'
+                ><i class="glyphicon glyphicon-book"></i>
+                <span>E-libro</span></a
+              >
+            </li>
+          </ul>
 
+          <li>
+            <a href="/Tramites/default/index"
+              ><i class="fa fa-book"></i> <span>Tramites</span></a
+            >
+          </li>
+        </section>
+      </aside>
 
-                        <a href="http://sij.usfx.bo/elibro/principal.usfx"
-                            target="_blank"
-                            data-method="GET"
-                            data-params='{"cu":"null","ca":"CS","idLibro":"null"}'><i
-                                class="glyphicon glyphicon-book"></i> <span>E-libro</span></a>
-                    </li>
-                </ul>
+      <div class="content-wrapper">
+        <section class="content-header">
+          <h1>Libreta</h1>
 
-                <li><a href="/Tramites/default/index"><i class="fa fa-book"></i> <span>Tramites</span></a></li>
-            </section>
-        </aside>
+          <ul class="breadcrumb">
+            <li><a href="/">Inicio</a></li>
+            <li class="active">KINESIOLOGIA Y FISIO.</li>
+            <li class="active">Libreta</li>
+          </ul>
+        </section>
 
+        <section class="content">
+          <!-- Table: Mis Mensajes -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Mis Mensajes</h3>
+              <div class="box-tools pull-right">
+                <button
+                  type="button"
+                  class="btn btn-box-tool"
+                  data-widget="collapse"
+                >
+                  <i class="fa fa-minus"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-box-tool"
+                  data-widget="remove"
+                >
+                  <i class="fa fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <div class="box-body"></div>
+          </div>
 
-        <div class="content-wrapper">
-            <section class="content-header">
-                <h1>
-                    Libreta </h1>
-
-                <ul class="breadcrumb">
-                    <li><a href="/">Inicio</a></li>
-                    <li class="active">KINESIOLOGIA Y FISIO.</li>
-                    <li class="active">Libreta</li>
-                </ul>
-            </section>
-
-            <section class="content">
-                <!-- Table: Mis Mensajes -->
-                <div class="box box-info">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">Mis Mensajes</h3>
-                        <div class="box-tools pull-right">
-                            <button type="button"
-                                class="btn btn-box-tool"
-                                data-widget="collapse"><i class="fa fa-minus"></i>
-                            </button>
-                            <button type="button"
-                                class="btn btn-box-tool"
-                                data-widget="remove"><i class="fa fa-times"></i></button>
-                        </div>
-                    </div>
-                    <div class="box-body">
-                    </div>
-                </div>
-
-                <div id="divDatosUniversitario">
-                    <div class="box box-info">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Datos del Universitario</h3>
-                        </div>
-                        <div class="box-body">
-                            <table id="tableDatosUniversitario"
-                                class="table table-striped table-bordered">
-                                <tr>
-                                    <th>Carnet Universitario</th>
-                                    <td>67-2603 </td>
-                                </tr>
-                                <tr>
-                                    <th>Carnet de Identidad</th>
-                                    <td>10392867 </td>
-                                </tr>
-                                <tr>
-                                    <th>Universitario</th>
-                                    <td>Gutierrez Paco Melani paola</td>
-                                </tr>
-                                <tr>
-                                    <th>Sistema</th>
-                                    <td>Anualizado</td>
-                                </tr>
-                                <tr>
-                                    <!--                <th>Récord Académico</th>
+          <div id="divDatosUniversitario">
+            <div class="box box-info">
+              <div class="box-header with-border">
+                <h3 class="box-title">Datos del Universitario</h3>
+              </div>
+              <div class="box-body">
+                <table
+                  id="tableDatosUniversitario"
+                  class="table table-striped table-bordered"
+                >
+                  <tr>
+                    <th>Carnet Universitario</th>
+                    <td>67-2603</td>
+                  </tr>
+                  <tr>
+                    <th>Carnet de Identidad</th>
+                    <td>10392867</td>
+                  </tr>
+                  <tr>
+                    <th>Universitario</th>
+                    <td>Gutierrez Paco Melani paola</td>
+                  </tr>
+                  <tr>
+                    <th>Sistema</th>
+                    <td>Anualizado</td>
+                  </tr>
+                  <tr>
+                    <!--                <th>Récord Académico</th>
                 <td><? $dataPromedio['PromedioIndividual']?></td>-->
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Libreta Académica</h3>
+            </div>
+            <div id="tabsGestiones">
+              <ul>
+                <li><a href="#2025">2025 </a></li>
+              </ul>
+              <div id="2025">
+                <div id="div2025">
+                  <div class="box-body" id="divLibretaUniversitario">
+                    <table
+                      id="tableLibretaUniversitario"
+                      class="table table-striped table-bordered"
+                    >
+                      <thead>
+                        <tr>
+                          <th rowspan="2">Código Asignatura</th>
+                          <th rowspan="2">Asignatura</th>
+                          <th rowspan="2">Curso</th>
+                          <th rowspan="2">Grupo</th>
+                          <th rowspan="2">SEA</th>
+                          <th colspan="3">Parciales</th>
+
+                          <th rowspan="2">Nota Parciales</th>
+                          <th rowspan="2">Prácticas</th>
+                          <th rowspan="2">Laboratorio</th>
+
+                          <th rowspan="2">Nota Semifinal</th>
+                          <th rowspan="2">Ex. Final</th>
+                          <th rowspan="2">Nota Final</th>
+                          <th rowspan="2">Segunda Inst.</th>
+                          <th colspan="3">Examen Invierno/Verano</th>
+                          <th rowspan="2"></th>
+                        </tr>
+                        <tr>
+                          <th>1ro</th>
+                          <th>2do</th>
+                          <th>3er</th>
+                          <th>1er Ex</th>
+                          <th>2do Ex</th>
+                          <th>Nota <br />Final</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>MOR100</td>
+                          <td>ANATOMÍA FUNCIONAL</td>
+                          <td>1</td>
+                          <td>B</td>
+                          <td>B</td>
+                          <td>14</td>
+                          <td>12</td>
+                          <td>-</td>
+                          <td>13</td>
+                          <td>22</td>
+
+                          <td>-</td>
+                          <td>35</td>
+                          <td>16</td>
+                          <td>51</td>
+                          <td>0</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>FIG200</td>
+                          <td>FISIOTERAPIA GENERAL</td>
+                          <td>2</td>
+                          <td>B</td>
+                          <td>B</td>
+                          <td>24</td>
+                          <td>28</td>
+                          <td>-</td>
+
+                          <td>26</td>
+                          <td>2</td>
+
+                          <td>-</td>
+                          <td>28</td>
+                          <td>27</td>
+                          <td>55</td>
+                          <td>0</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>KIN200</td>
+                          <td>KINESIOLOGÍA</td>
+                          <td>2</td>
+                          <td>B</td>
+                          <td>B</td>
+                          <td>20</td>
+                          <td>22</td>
+                          <td>-</td>
+
+                          <td>21</td>
+                          <td>15</td>
+
+                          <td>-</td>
+                          <td>36</td>
+                          <td>20</td>
+                          <td>56</td>
+                          <td>0</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>IMA200</td>
+                          <td>RADIOLOGÍA E IMAGENOLOGÍA</td>
+                          <td>2</td>
+                          <td>B</td>
+                          <td>B</td>
+                          <td>22</td>
+                          <td>24</td>
+                          <td>-</td>
+
+                          <td>23</td>
+                          <td>10</td>
+
+                          <td>-</td>
+                          <td>33</td>
+                          <td>22</td>
+                          <td>55</td>
+                          <td>0</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="box-footer with-border">
+                    <span class="description-text" id="nota">
+                      *Las Calificaciones en ROJO estan pendientes de validación
+                      por parte del docente y estan sujetas a modificación
+                    </span>
+                    <br />
+                    <span class="description-text" id="nota">
+                      ** Las casillas con "-" no son tomadas en cuenta para las
+                      ponderaciones
+                    </span>
+                  </div>
+                  <br />
+
+                  <div class="box-header with-border">
+                    <h3 class="box-title">
+                      CODIGOS DEL SISTEMA DE EVALUACIÓN ACADÉMICA (SEA)
+                    </h3>
+                  </div>
+
+                  <div class="box-body" id="divCodigoSea">
+                    <table
+                      id="tableCodigoSea"
+                      class="table table-striped table-bordered"
+                    >
+                      <thead>
+                        <tr>
+                          <th>Código</th>
+                          <th>Prueba Parciales</th>
+                          <th>Prueba Prácticas</th>
+                          <th>Laboratorios</th>
+                          <th>Prueba Final</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr></tr>
+                        <tr>
+                          <td>B</td>
+                          <td>35</td>
+                          <td>25</td>
+                          <td>0</td>
+                          <td>40</td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <div class="box box-info">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">Libreta Académica</h3>
-                    </div>
-                    <div id="tabsGestiones">
-                        <ul>
-                            <li><a href="#2025">2025 </a></li>
-                        </ul>
-                        <div id="2025">
-                            <div id="div2025">
-                                <div class="box-body"
-                                    id="divLibretaUniversitario">
-                                    <table id="tableLibretaUniversitario"
-                                        class="table table-striped table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th rowspan="2">Código Asignatura</th>
-                                                <th rowspan="2">Asignatura</th>
-                                                <th rowspan="2">Curso</th>
-                                                <th rowspan="2">Grupo</th>
-                                                <th rowspan="2">SEA</th>
-                                                <th colspan="3">
-                                                    Parciales </th>
+          <form
+            id="formGestionLibreta"
+            method="get"
+            action="generar-libreta"
+            target="_blank"
+          >
+            <input
+              type="hidden"
+              name="gestion"
+              id="gestionActual"
+              value="2025  "
+              readonly="readonly"
+            />
+            <button
+              type="submit"
+              class="btn btn-primary btn-block"
+              id="btnImprimir"
+            >
+              <i class="fa fa-file-pdf-o" style="font-size: 20px"></i>
+              &ensp;Imprimir
+            </button>
+          </form>
+        </section>
+      </div>
 
-                                                <th rowspan="2">Nota Parciales</th>
-                                                <th rowspan="2">Prácticas</th>
-                                                <th rowspan="2">Laboratorio</th>
+      <footer class="main-footer">
+        <!-- Footer Elements -->
+        <div class="container">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
 
-                                                <th rowspan="2">Nota Semifinal</th>
-                                                <th rowspan="2">Ex. Final</th>
-                                                <th rowspan="2">Nota Final</th>
-                                                <th rowspan="2">Segunda Inst.</th>
-                                                <th colspan="3">Examen Invierno/Verano</th>
-                                                <th rowspan="2"></th>
-                                            </tr>
-                                            <tr>
-                                                <th>1ro</th>
-                                                <th>2do</th>
-                                                <th>3er</th>
-                                                <th>1er Ex</th>
-                                                <th>2do Ex</th>
-                                                <th>Nota <br>Final</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>MOR100</td>
-                                                <td>ANATOMÍA FUNCIONAL</td>
-                                                <td>1</td>
-                                                <td>B </td>
-                                                <td>B </td>
-                                                <td>25 </td>
-                                                <td>27 </td>
-                                                <td>
-                                                    <font color='red'><b>- </b></font>
-                                                </td>
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <!--Image-->
+              <div class="view overlay z-depth-1-half">
+                <img src="/images/usfx-small.png" alt="USFX" />
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 text-center">
+              <!--Image-->
+              <div class="view overlay z-depth-1-half">
+                <img src="/images/dtic-small.png" alt="DTIC" />
+              </div>
+            </div>
 
-                                                <td>
-                                                    <font color='red'><b>26</b></font>
-                                                </td>
-                                                <td>
-                                                    <font color='red'><b>22</b></font>
-                                                </td>
-
-                                                <td>
-                                                    <font color='red'><b>0</b></font>
-                                                </td>
-                                                <td>
-                                                    <font color='red'><b>48</b></font>
-                                                </td>
-                                                <td>
-                                                    <font color='red'><b>0</b></font>
-                                                </td>
-                                                <td>
-                                                    <font color='red'><b>48</b></font>
-                                                </td>
-                                                <td>
-                                                    <font color='red'><b>0 </b></font>
-                                                </td>
-                                                <td>- </td>
-                                                <td>- </td>
-                                                <td>- </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td>FIG200</td>
-                                                <td>FISIOTERAPIA GENERAL</td>
-                                                <td>2</td>
-                                                <td>B </td>
-                                                <td>B </td>
-                                                <td>24 </td>
-                                                <td>28 </td>
-                                                <td>
-                                                    <font color='red'><b>- </b></font>
-                                                </td>
-
-                                                <td>
-                                                    26 </td>
-                                                <td>
-                                                    <font color='red'><b>20</b></font>
-                                                </td>
-
-                                                <td>
-                                                    <font color='red'><b>0</b></font>
-                                                </td>
-                                                <td>
-                                                    <font color='red'><b>46</b></font>
-                                                </td>
-                                                <td>
-                                                    <font color='red'><b>0</b></font>
-                                                </td>
-                                                <td>
-                                                    <font color='red'><b>46</b></font>
-                                                </td>
-                                                <td>
-                                                    <font color='red'><b>0</b></font>
-                                                </td>
-                                                <td>- </td>
-                                                <td>- </td>
-                                                <td>- </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td>KIN200</td>
-                                                <td>KINESIOLOGÍA</td>
-                                                <td>2</td>
-                                                <td>B </td>
-                                                <td>B </td>
-                                                <td>20 </td>
-                                                <td>22 </td>
-                                                <td>- </td>
-
-                                                <td>
-                                                    21 </td>
-                                                <td>15 </td>
-
-                                                <td>
-                                                    - </td>
-                                                <td>36 </td>
-                                                <td>
-                                                    <font color='red'><b>0</b></font>
-                                                </td>
-                                                <td>
-                                                    <font color='red'><b>36</b></font>
-                                                </td>
-                                                <td>
-                                                    <font color='red'><b>0</b></font>
-                                                </td>
-                                                <td>- </td>
-                                                <td>- </td>
-                                                <td>- </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td>IMA200</td>
-                                                <td>RADIOLOGÍA E IMAGENOLOGÍA </td>
-                                                <td>2</td>
-                                                <td>B </td>
-                                                <td>B </td>
-                                                <td>22 </td>
-                                                <td>24 </td>
-                                                <td>- </td>
-
-                                                <td>
-                                                    23 </td>
-                                                <td>15 </td>
-
-                                                <td>
-                                                    - </td>
-                                                <td>38 </td>
-                                                <td>
-                                                    <font color='red'><b>0</b></font>
-                                                </td>
-                                                <td>
-                                                    <font color='red'><b>38</b></font>
-                                                </td>
-                                                <td>
-                                                    <font color='red'><b>0</b></font>
-                                                </td>
-                                                <td>- </td>
-                                                <td>- </td>
-                                                <td>- </td>
-
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-
-
-                                <div class="box-footer with-border">
-                                    <span class="description-text"
-                                        id="nota">
-                                        *Las Calificaciones en ROJO estan pendientes de validación por parte
-                                        del docente y estan sujetas a modificación
-                                    </span>
-                                    <br>
-                                    <span class="description-text"
-                                        id="nota">
-                                        ** Las casillas con "-" no son tomadas en cuenta para las ponderaciones
-                                    </span>
-                                </div><br>
-
-                                <div class="box-header with-border">
-                                    <h3 class="box-title">
-                                        CODIGOS DEL SISTEMA DE EVALUACIÓN ACADÉMICA (SEA)
-                                    </h3>
-                                </div>
-
-                                <div class="box-body"
-                                    id="divCodigoSea">
-                                    <table id="tableCodigoSea"
-                                        class="table table-striped table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th>Código</th>
-                                                <th>Prueba Parciales</th>
-                                                <th>Prueba Prácticas</th>
-                                                <th>Laboratorios</th>
-                                                <th>Prueba Final</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                            <tr>
-                                                <td>B</td>
-                                                <td>35</td>
-                                                <td>25</td>
-                                                <td>0</td>
-                                                <td>40</td>
-                                            </tr>
-                                            <tr>
-                                            <tr>
-                                            <tr>
-                                            <tr>
-                                            <tr>
-                                            <tr>
-                                            <tr>
-                                            <tr>
-                                            <tr>
-                                            <tr>
-                                            <tr>
-                                            <tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <form id="formGestionLibreta"
-                    method="get"
-                    action="generar-libreta"
-                    target="_blank">
-                    <input type="hidden"
-                        name="gestion"
-                        id="gestionActual"
-                        value="2025  "
-                        readonly="readonly" />
-                    <button type="submit"
-                        class="btn btn-primary btn-block"
-                        id="btnImprimir">
-                        <i class="fa fa-file-pdf-o"
-                            style="font-size: 20px;"></i>
-                        &ensp;Imprimir
-                    </button>
-                </form>
-            </section>
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <!--Image-->
+              <div class="view overlay z-depth-1-half fa-pull-right">
+                <a href="mailto:dtic.soporte@usfx.bo">
+                  <img
+                    src="/images/email.jpg"
+                    alt="Soporte Tecnico"
+                  />dtic.soporte@usfx.bo
+                </a>
+                <br />
+                <a href="https://t.me/canalusfx" target="_blank">
+                  <img src="/images/telegram2.jpg" alt="Canal Telegram" />Canal
+                  de Telegram</a
+                ><br />
+                <a href="https://t.me/grupousfx" target="_blank">
+                  <img src="/images/telegram2.jpg" alt="Grupo Telegram" />Grupo
+                  de Telegram</a
+                >
+              </div>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
         </div>
+      </footer>
 
-        <footer class="main-footer">
-
-            <!-- Footer Elements -->
-            <div class="container">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4 ">
-
-                        <!--Image-->
-                        <div class="view overlay z-depth-1-half">
-                            <img src="/images/usfx-small.png"
-                                alt="USFX">
-                        </div>
-
-
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4 text-center">
-
-                        <!--Image-->
-                        <div class="view overlay z-depth-1-half">
-                            <img src="/images/dtic-small.png"
-                                alt="DTIC">
-                        </div>
-
-                    </div>
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-
-                        <!--Image-->
-                        <div class="view overlay z-depth-1-half fa-pull-right">
-                            <a href='mailto:dtic.soporte@usfx.bo'>
-                                <img src="/images/email.jpg"
-                                    alt="Soporte Tecnico">dtic.soporte@usfx.bo </a> <br>
-                            <a href='https://t.me/canalusfx'
-                                target="_blank"> <img src="/images/telegram2.jpg"
-                                    alt="Canal Telegram">Canal de Telegram</a><br>
-                            <a href='https://t.me/grupousfx'
-                                target="_blank"> <img src="/images/telegram2.jpg"
-                                    alt="Grupo Telegram">Grupo de Telegram</a>
-                        </div>
-
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Create the tabs -->
+        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+          <li>
+            <a href="#control-sidebar-home-tab" data-toggle="tab"
+              ><i class="fa fa-home"></i
+            ></a>
+          </li>
+          <!--<li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>-->
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <!-- Home tab content -->
+          <div class="tab-pane active" id="control-sidebar-home-tab">
+            <br />
+            <label class="control-sidebar-subheading" style="text-align: left"
+              >Carreras</label
+            >
+            <div>
+              <form id="formSeleccionarCarrera" action="/" method="POST">
+                <input
+                  type="hidden"
+                  name="_csrf"
+                  value="FmUoTBrHRszYQOo09zr-L5UbZp-l6qB6i_rJbZBYQKheV2MGXrADupZ2vkHOaacX4EkB7Oyv9ErKg6Ye32EW-A=="
+                /><select
+                  id="selectCarreras"
+                  name="selectCarreras"
+                  style="width: 100%; color: #666666"
+                >
+                  <option value="67-2603  " selected>
+                    KINESIOLOGIA Y FISIO.
+                  </option></select
+                ><br /><br /><button
+                  type="submit"
+                  id="btnAplicar"
+                  class="btn btn-block btn-primary btn-xs"
+                >
+                  Cambiar
+                </button>
+              </form>
             </div>
+          </div>
+          <!-- /.tab-pane -->
 
-
-        </footer>
-
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Create the tabs -->
-            <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-                <li><a href="#control-sidebar-home-tab"
-                        data-toggle="tab"><i class="fa fa-home"></i></a></li>
-                <!--<li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>-->
-            </ul>
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <!-- Home tab content -->
-                <div class="tab-pane active"
-                    id="control-sidebar-home-tab">
-                    <br>
-                    <label class="control-sidebar-subheading"
-                        style="text-align: left;">Carreras</label>
-                    <div>
-                        <form id="formSeleccionarCarrera"
-                            action="/"
-                            method="POST">
-                            <input type="hidden"
-                                name="_csrf"
-                                value="FmUoTBrHRszYQOo09zr-L5UbZp-l6qB6i_rJbZBYQKheV2MGXrADupZ2vkHOaacX4EkB7Oyv9ErKg6Ye32EW-A=="><select
-                                id="selectCarreras"
-                                name="selectCarreras"
-                                style="width: 100%; color: #666666;">
-                                <option value="67-2603  "
-                                    selected>KINESIOLOGIA Y FISIO.</option>
-                            </select><br><br><button type="submit"
-                                id="btnAplicar"
-                                class="btn btn-block btn-primary btn-xs">Cambiar</button>
-                        </form>
-                    </div>
-                </div>
-                <!-- /.tab-pane -->
-
-                <!-- Settings tab content -->
-                <!--            <div class="tab-pane" id="control-sidebar-settings-tab">
+          <!-- Settings tab content -->
+          <!--            <div class="tab-pane" id="control-sidebar-settings-tab">
             </div>-->
-                <!-- /.tab-pane -->
-            </div>
-        </aside><!-- /.control-sidebar -->
-        <div class='control-sidebar-bg'></div>
-
+          <!-- /.tab-pane -->
+        </div>
+      </aside>
+      <!-- /.control-sidebar -->
+      <div class="control-sidebar-bg"></div>
     </div>
 
     <script src="assets/ae247ea1/jquery.js"></script>
@@ -705,10 +727,11 @@
     <script src="js/layoutLeft.js"></script>
     <script src="plugins/sweetalert2/sweetalert2.all.js"></script>
     <script src="assets/bf13c3dc/yii.activeForm.js"></script>
-    <script>jQuery(function ($) {
-            jQuery('#tabsGestiones').tabs();
-            jQuery('#formSeleccionarCarrera').yiiActiveForm([], []);
-        });</script>
-</body>
-
+    <script>
+      jQuery(function ($) {
+        jQuery("#tabsGestiones").tabs();
+        jQuery("#formSeleccionarCarrera").yiiActiveForm([], []);
+      });
+    </script>
+  </body>
 </html>
